@@ -1,0 +1,369 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+@font-face {
+  font-family: FontAwesome;
+  src: url('font-awesome/fonts/fontawesome-webfont.woff');
+}
+body {
+  font-family: 'Comfortaa';
+  color: #6285ab;
+}
+a:visited, a:link {
+  text-decoration: none;
+  color: #6285ab;
+}
+/**
+ * Header
+ */
+.head-wrap {
+  background-color: white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: table;
+  table-layout: fixed;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 100;
+  transition: all .3s ease;
+}
+.shrink {
+  background-color: #e1f0ff;
+  height: 50px;
+  padding: 0;
+}
+.head-left, .head-right {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0;
+  box-shadow: border-box;
+  text-transform: uppercase;
+}
+.head-left {
+  font-size: 1.3em;
+}
+.logo {
+  text-align: center;
+  color: #6285ab;
+}
+.logo:hover {
+  cursor: pointer;
+}
+.head-right {
+  font-size: 1em;
+}
+.head-content {
+  list-style: none;
+  display: inline-block;
+  padding: 15px;
+  box-sizing: border-box;
+  color: #2b629c;
+  cursor: pointer;
+}
+.current {
+  color: #98c1ec;
+  background-color: #fffdd6;
+}
+/**
+ * Hero
+ */
+.hero-wrap {
+  margin: auto;
+  width: 1080px;
+  height: 779px;
+  margin-top: 200px;
+}
+.puppy {
+  padding-top: 50px;
+}
+.puppy-img {
+  width: 400px;
+  height: auto;
+  border-radius: 150px;
+  display: block;
+  margin: auto;
+}
+.hire {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.date {
+  text-align: center;
+  font-size: 1.3em;
+}
+.buttons {
+  text-align: center;
+  margin-top: 40px;
+}
+.buttons-content {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  padding: 10px;
+  box-sizing: border-box;
+  border: solid #6285ab 1px;
+  border-radius: 6px;
+  transition: all .5s ease;
+  margin-right: 5px;
+}
+.buttons-content:hover {
+  background-color: #6285ab;
+  color: white;
+}
+.continue {
+  width: 1px;
+  height: 1px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.continue:before {
+  font-family: "FontAwesome";
+  content: '\f103';
+  font-size: 2.5em;
+  color: #6285ab;
+}
+.continue:hover:before {
+  cursor: pointer;
+  font-size: 2.6em;
+}
+/**
+ * About
+ */
+.about {
+  height: 600px;
+  background-color: #6285ab;
+}
+.about-wrap {
+  width: 800px;
+  padding: 50px 0;
+  box-sizing: border-box;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+.about-content {
+  font-size: 1.2em;
+  padding: 20px;
+}
+/**
+ * Image
+ */
+.big-img {
+  width: 100%;
+  height: 100%;
+  background: -webkit-radial-gradient(top center, ellipse cover, rgba(255,255,255,0.2) 0%,rgba(125, 157, 230, 0.5) 90%), url('img/puppies.jpg') no-repeat;
+  background-size: cover;
+}
+/**
+ * Schedule
+ */
+.schedule {
+  height: 1150px;
+  width: 100%;
+  background-color: #6285ab;
+}
+.schedule-intro {
+  width: 800px;
+  padding: 50px 0;
+  box-sizing: border-box;
+  margin: auto;
+  color: white;
+}
+.fall-content {
+  font-size: 1.2em;
+  padding: 20px;
+}
+.schedule-content {
+  width: 1000px;
+  padding: 0 0 50px 0;
+  box-sizing: border-box;
+  margin: auto;
+  color: white;
+}
+.schedule-date {
+  text-align: left;
+  font-size: 2em;
+  margin: 50px 0 10px 0;
+}
+.schedule-content-wrap {
+  display: table;
+  table-layout: fixed;
+  width: 1000px;
+}
+.schedule-event, .schedule-time, .schedule-place {
+  display: table-cell;
+  list-style: none;
+}
+.schedule-event-content, .schedule-time-content, .schedule-place-content {
+  padding: 5px;
+  box-sizing: border-box;
+}
+/**
+ * Image
+ */
+.big-img2 {
+  width: 100%;
+  height: 100%;
+  background: -webkit-radial-gradient(top center, ellipse cover, rgba(255,255,255,0.2) 0%,rgba(125, 157, 230, 0.5) 90%), url('img/puppykitten.jpg') no-repeat;
+  background-size: cover;
+}
+/**
+ * FAQ
+ */
+.faq {
+  width: 100%;
+  height: 2200px;
+  background-color: #6285ab;
+}
+.faq-title {
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+.faq-wrap {
+  display: table;
+  table-layout: fixed;
+  margin: auto;
+  color: black;
+}
+.faq-left, .faq-right {
+  display: table-cell;
+}
+.faq-content {
+  width: 400px;
+  margin: 20px;
+  background-color: white;
+  border: solid white 1px;
+  border-radius: 10px;
+}
+.faq-question {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 30px;
+  box-sizing: border-box; 
+}
+.faq-answer {
+  padding: 0 20px 20px;
+  box-sizing: border-box;
+}
+/**
+ *Sponsor
+ */
+ .sponsor-wrap {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+ }
+ .sponsor-tier {
+  padding: 50px;
+  box-sizing: border-box;
+  color: black;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+ }
+.sponsor-content-wrap {
+  display: table;
+  table-layout: fixed;
+  margin: auto;
+}
+.sponsor-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+ .sponsor-img {
+  height: 200px;
+  width: auto;
+  padding: 20px;
+ }
+ .sponsor-partner, .powered {
+  text-align: center;
+ }
+.powered {
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+/**
+ * Support
+ */
+.support {
+  width: 100%;
+  height: 500px;
+  background: -webkit-radial-gradient(top center, ellipse cover, rgba(255,255,255,0.2) 0%,rgba(125, 157, 230, 0.5) 90%), url('img/support.jpg') no-repeat center center;
+  background-size: cover;
+}
+.support-title {
+  padding: 100px 0 50px 0;
+}
+.join-support {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  display: block;
+}
+.support-buttons {
+  text-align: center;
+  margin-top: 40px;
+}
+.support-buttons-content {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  padding: 10px;
+  box-sizing: border-box;
+  border: solid white 2px;
+  border-radius: 6px;
+  transition: all .5s ease;
+  margin-right: 5px;
+  color: white;
+}
+.support-buttons-content:link, .support-buttons-content:visited {
+  color: white;
+}
+.support-buttons-content:hover {
+  background-color: #6285ab;
+}
+/**
+ *Made with love
+ */
+ .made {
+  width: 100%;
+  height: 150px;
+  background-color: #6285ab;
+ }
+ .made-love {
+  padding-top: 75px;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+ }
